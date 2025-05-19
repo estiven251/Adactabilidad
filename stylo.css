@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Ejercicio 2*/
+
+.breakpoints{
+    background-color: darkgoldenrod;
+    color: blue;
+    border: 2px yellow solid;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+@media (min-width: 572px) and (max-width: 767px){
+    .breakpoints{
+        background-color: rgb(30, 255, 0);
+        color: rgb(73, 73, 104);
+        border: 2px rgb(0, 0, 0) solid;
+        width: 200px;
+        height: 200px;
+        margin: 0 auto;
+        position: relative
+    }
+    .breakpoints h1{
+        position: absolute;
+        right: 10px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+    .breakpoints{
+        background-color: rgb(247, 8, 139);
+        color: rgb(0, 0, 0);
+        border: 2px rgb(43, 255, 0) solid;
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+        margin: 0 auto;
+
+    }
+    .breakpoints h1{
+        margin-top: 80px;
+        font-size: 20px;
+        font-style: italic;
+        text-align: center;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px){
+    .breakpoints{
+        background-color: rgb(0, 255, 255);
+        color: rgb(255, 0, 0);
+        border: 2px rgb(0, 0, 0) solid;
+        border-radius: 70px;
+        width: 200px;
+        height: 200px;
+        margin: 0 auto;
+    }
+    .breakpoints h1{
+        margin-top: 30px;
+        display: block;
+        font-size: 22px;
+        font-style: italic;
+        text-align: center;
+    }
+}
+/*Ejercicio 3*/
+.mobile{
+    margin-top: 40px;
+    text-align: center;
+    box-shadow: 2px 2px 2px black;
+    color:brown;
+}
+.mobile h2{
+    margin-top: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: orangered;
+}
+@media (min-width: 572px) and (max-width: 767px){
+    .mobile{
+        margin-top: 40px;
+        text-align: center;
+        box-shadow: 2px 2px 2px black;
+        color:rgb(0, 0, 0);
+        font-style: italic;
+    }
+    .mobile h2{
+        margin-top: 20px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 22px;
+        color: rgb(0, 68, 255);
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+    .mobile{
+        margin-top: 40px;
+        text-align: center;
+        box-shadow: 2px 2px 2px black;
+        color:rgb(255, 0, 140);
+    }
+    .mobile h2{
+        margin-top: 20px;
+        border: 2px solid green;
+        background-color: aquamarine;
+        color: rgb(107, 59, 38);
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px){
+    .mobile{
+        margin-top: 40px;
+        text-align: center;
+        box-shadow: 2px 2px 2px black;
+        color:rgb(255, 0, 140);
+    }
+    .mobile h2{
+        margin-top: 20px;
+        font-style: italic;
+        background-color: rgb(168, 245, 80);
+        color: rgb(0, 174, 255);
+    }
+}
