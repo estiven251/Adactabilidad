@@ -3,19 +3,27 @@
     padding: 0;
     box-sizing: border-box;
 }
+header nav{
+    list-style: none;
+    justify-content: center;
+    margin-top: 10px;
+    font-size: 30px;
+    text-align: center;
+}
 /*Ejercicio 2*/
-
 .breakpoints{
-    background-color: darkgoldenrod;
+    background-color: rgb(154, 194, 218);
     color: blue;
     border: 2px yellow solid;
     width: 200px;
     height: 200px;
     margin: 0 auto;
+    margin-top: 5%;
 }
 
 @media (min-width: 572px) and (max-width: 767px){
     .breakpoints{
+        margin-top: 20%;
         background-color: rgb(30, 255, 0);
         color: rgb(73, 73, 104);
         border: 2px rgb(0, 0, 0) solid;
@@ -32,6 +40,7 @@
 
 @media (min-width: 768px) and (max-width: 991px){
     .breakpoints{
+        margin-top: 20%;
         background-color: rgb(247, 8, 139);
         color: rgb(0, 0, 0);
         border: 2px rgb(43, 255, 0) solid;
@@ -51,6 +60,7 @@
 
 @media (min-width: 992px) and (max-width: 1200px){
     .breakpoints{
+        margin-top: 20%;
         background-color: rgb(0, 255, 255);
         color: rgb(255, 0, 0);
         border: 2px rgb(0, 0, 0) solid;
@@ -122,5 +132,74 @@
         font-style: italic;
         background-color: rgb(168, 245, 80);
         color: rgb(0, 174, 255);
+    }
+} 
+/*Ejercicio 4*/
+.contenedor {
+    width: 80%; /* Ancho del contenido para escritorio */
+    max-width: 900px; /* Ancho máximo para que no se estire demasiado */
+    margin: 0 auto; /* Centrar en la pantalla */
+    background-color: #5992d3;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 4px 4px 10px rgba(116, 2, 2, 0.1);
+    margin-top: 20%;
+}
+
+h1 {
+    color: #ff0000;
+    margin-bottom: 30px;
+    text-align: center;
+    font-style: italic;
+}
+
+.cajas-flex {
+    
+    display: flex; /* Las cajas se ponen en fila en escritorio */
+    justify-content: space-around; /* Espacio entre ellas */
+    gap: 20px; /* Separación entre cajas */
+    flex-wrap: wrap; /* Permite que las cajas se envuelvan si no caben */
+}
+.caja img {
+    max-width: 100%; /* La imagen nunca será más ancha que su contenedor */
+    height: auto;    /* Mantiene la proporción de aspecto de la imagen */
+    display: block;  /* Elimina el espacio extra debajo de las imágenes (comportamiento inline) */
+    margin-bottom: 15px; /* Espacio debajo de la imagen */
+    border-radius: 5px; /* Bordes ligeramente redondeados para la imagen */
+}
+
+.caja {
+    flex: 1; /* Cada caja ocupa el mismo espacio disponible */
+    min-width: 250px; /* Asegura un tamaño mínimo para cada caja */
+    background-image: url(imagenes/OIP.jpeg); /* Color de fondo de la caja */
+    border: 3px solid #000000;
+    padding: 30px 20px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: #b3002d;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+
+/* --- MEDIA QUERY para MÓVILES (Aplicar estos estilos solo en pantallas pequeñas) --- */
+
+@media (max-width: 600px) {
+    .contenedor {
+        width: 95%; /* Más ancho en móviles */
+        padding: 15px;
+    }
+
+    .cajas-flex {
+        
+        flex-direction: column; /* Las cajas se apilan una debajo de otra en móviles */
+        align-items: center; /* Centrar las cajas apiladas */
+    }
+
+    .caja {
+        width: 100%; /* Las cajas ocupan todo el ancho disponible */
+        margin-bottom: 15px; /* Espacio entre cajas apiladas */
+        min-width: unset; /* Quitar el min-width de escritorio */
     }
 }
