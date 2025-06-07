@@ -1,205 +1,400 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-header nav{
-    list-style: none;
-    justify-content: center;
-    margin-top: 10px;
-    font-size: 30px;
-    text-align: center;
-}
-/*Ejercicio 2*/
-.breakpoints{
-    background-color: rgb(154, 194, 218);
-    color: blue;
-    border: 2px yellow solid;
-    width: 200px;
-    height: 200px;
-    margin: 0 auto;
-    margin-top: 5%;
-}
+  *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+  header nav {
+      list-style: none;
+      justify-content: center;
+      margin-top: 10px;
+      font-size: 30px;
+      text-align: center;
+  }
+  /*Ejercicio 2*/
+  .breakpoints{
+      background-color: rgb(154, 194, 218);
+      color: blue;
+      border: 2px yellow solid;
+      width: 200px;
+      height: 200px;
+      margin: 0 auto;
+      margin-top: 5%;
+  }
 
-@media (min-width: 572px) and (max-width: 767px){
-    .breakpoints{
-        margin-top: 20%;
-        background-color: rgb(30, 255, 0);
-        color: rgb(73, 73, 104);
-        border: 2px rgb(0, 0, 0) solid;
-        width: 200px;
-        height: 200px;
-        margin: 0 auto;
-        position: relative
+  @media (min-width: 572px) and (max-width: 767px){
+    body{
+      background-color: #cccccc;
+      background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(pantalla/milky-way-2695569_1280.jpg);
+      
     }
-    .breakpoints h1{
-        position: absolute;
-        right: 10px;
-    }
-}
+      .breakpoints{
+          margin-top: 20%;
+          background-color: rgb(30, 255, 0);
+          color: rgb(73, 73, 104);
+          border: 2px rgb(0, 0, 0) solid;
+          width: 200px;
+          height: 200px;
+          margin: 0 auto;
+          position: relative;
+          margin-top: 5%;
+          font-size: 2vw;
+      }
+      .breakpoints h1{
+          position: absolute;
+          right: 10px;
+          font-size: 4vw;
+          margin-right: 30px;
+      }
+  }
 
-@media (min-width: 768px) and (max-width: 991px){
-    .breakpoints{
-        margin-top: 20%;
-        background-color: rgb(247, 8, 139);
-        color: rgb(0, 0, 0);
-        border: 2px rgb(43, 255, 0) solid;
-        border-radius: 50%;
-        width: 200px;
-        height: 200px;
-        margin: 0 auto;
+  @media (min-width: 768px) and (max-width: 991px){
+    body{
+      background-color: #f78484;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(pantalla/watercolor-2681039_1280.jpg);
+    }
+      .breakpoints{
+          margin-top: 20%;
+          background-color: rgb(159, 238, 23);
+          color: rgb(0, 0, 0);
+          border: 2px rgb(43, 255, 0) solid;
+          border-radius: 50%;
+          width: 200px;
+          height: 200px;
+          margin: 0 auto;
+          margin-top: 5%;
+
+      }
+      .breakpoints h1{
+        color: #000000;
+          margin-top: 80px;
+          font-style: italic;
+          text-align: center;
+          font-size: 4vw;
+          margin-right: 10px;
+      }
+  }
+
+  @media (min-width: 992px) and (max-width: 1200px){
+    body{
+      background-color: #75bcdb;
+      background-image:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(pantalla/hummingbird-8013214_1280.jpg);
+    }
+      .breakpoints{
+          margin-top: 20%;
+          background-color: rgb(0, 255, 255);
+          color: rgb(255, 0, 0);
+          border: 2px rgb(0, 0, 0) solid;
+          border-radius: 70px;
+          width: 200px;
+          height: 200px;
+          margin: 0 auto;
+          margin-top: 5%;
+      }
+      .breakpoints h1{
+          margin-top: 40%;
+          font-style: italic;
+          text-align: center;
+          font-size: 2.5vw;
+          margin-right: 9px;
+      }
+  }
+  /*Ejercicio 3*/
+  .mobile{
+      margin-top: 40px;
+      text-align: center;
+      box-shadow: 2px 2px 2px black;
+      color:brown;
+  }
+  .mobile h2{
+      margin-top: 20px;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      color: orangered;
+  }
+  @media (min-width: 572px) and (max-width: 767px){
+      .mobile{
+          margin-top: 40px;
+          text-align: center;
+          box-shadow: 2px 2px 2px black;
+          color:rgb(0, 0, 0);
+          font-style: italic;
+      }
+      .mobile h2{
+          margin-top: 20px;
+          font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+          font-size: 22px;
+          color: rgb(0, 68, 255);
+      }
+  }
+
+  @media (min-width: 768px) and (max-width: 991px){
+      .mobile{
+          margin-top: 40px;
+          text-align: center;
+          box-shadow: 2px 2px 2px black;
+          color:rgb(255, 0, 140);
+      }
+      .mobile h2{
+          margin-top: 20px;
+          border: 2px solid green;
+          background-color: aquamarine;
+          color: rgb(107, 59, 38);
+      }
+  }
+
+  @media (min-width: 992px) and (max-width: 1200px){
+      .mobile{
+          margin-top: 40px;
+          text-align: center;
+          box-shadow: 2px 2px 2px black;
+          color:rgb(255, 0, 140);
+      }
+      .mobile h2{
+          margin-top: 20px;
+          font-style: italic;
+          background-color: rgb(168, 245, 80);
+          color: rgb(0, 174, 255);
+      }
+  } 
+  /*Ejercicio 4*/
+  .contenedor {
+      width: 80%; /* Ancho del contenido para escritorio */
+      max-width: 900px; /* Ancho máximo para que no se estire demasiado */
+      margin: 0 auto; /* Centrar en la pantalla */
+      background-color: #5992d3;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 4px 4px 10px rgba(116, 2, 2, 0.1);
+      margin-top: 20%;
+  }
+
+  h1 {
+      color: #ff0000;
+      margin-bottom: 30px;
+      text-align: center;
+      font-style: italic;
+  }
+
+  .caja img {
+      max-width: 100%; /* La imagen nunca será más ancha que su contenedor */
+      height: auto;    /* Mantiene la proporción de aspecto de la imagen */
+      display: block;  /* Elimina el espacio extra debajo de las imágenes (comportamiento inline) */
+      margin-bottom: 15px; /* Espacio debajo de la imagen */
+      border-radius: 5px; /* Bordes ligeramente redondeados para la imagen */
+  }
+
+  .caja {
+      min-width: 250px; /* Asegura un tamaño mínimo para cada caja */
+      background-image: url(imagenes/OIP.jpeg); 
+      border: 3px solid #000000;
+      padding: 30px 20px;
+      border-radius: 5px;
+      text-align: center;
+      font-size: 30px;
+      font-weight: bold;
+      color: #b3002d;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+      margin-top: 5%;
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
+
+
+
+  /* --- MEDIA QUERY para MÓVILES (Aplicar estos estilos solo en pantallas pequeñas) --- */
+
+  @media (max-width: 600px) {
+      .contenedor {
+          width: 95%; /* Más ancho en móviles */
+          padding: 15px;
+      }
+
+      .caja {
+          width: 100%; /* Las cajas ocupan todo el ancho disponible */
+          margin-bottom: 15px; /* Espacio entre cajas apiladas */
+          min-width: unset; /* Quitar el min-width de escritorio */
+      }
+  }
+  /*Ejercicio 5*/
+  @media (min-width: 572px) and (max-width: 767px) {
+    header nav a{
+      text-decoration: none;
+      text-align: center;
+      font-size: 25px;
+      color: indianred;
+      
+    }
+  }
+  @media (min-width: 768px) and (max-width: 991px){
+    header nav a{
+      text-decoration: none;
+      text-align: center;
+      font-size: 25px;
+      font-style: italic;
+      color: rgb(18, 13, 94);
+      
+    }
+  }
+  @media (min-width: 992px) and (max-width: 1200px){
+    header nav a{
+      display: inline-block;
+      text-decoration: none;
+      text-align: center;
+      font-size: 2rem;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      color: rgb(60, 3, 55);    
+    }
+    header li{
+      display: inline-block;
+      margin: 0 5px;
+      vertical-align: top;
 
     }
-    .breakpoints h1{
-        margin-top: 80px;
-        font-size: 20px;
-        font-style: italic;
-        text-align: center;
-    }
-}
-
-@media (min-width: 992px) and (max-width: 1200px){
-    .breakpoints{
-        margin-top: 20%;
-        background-color: rgb(0, 255, 255);
-        color: rgb(255, 0, 0);
-        border: 2px rgb(0, 0, 0) solid;
-        border-radius: 70px;
-        width: 200px;
-        height: 200px;
-        margin: 0 auto;
-    }
-    .breakpoints h1{
-        margin-top: 30px;
-        display: block;
-        font-size: 22px;
-        font-style: italic;
-        text-align: center;
-    }
-}
-/*Ejercicio 3*/
-.mobile{
-    margin-top: 40px;
-    text-align: center;
-    box-shadow: 2px 2px 2px black;
-    color:brown;
-}
-.mobile h2{
-    margin-top: 20px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: orangered;
-}
-@media (min-width: 572px) and (max-width: 767px){
-    .mobile{
-        margin-top: 40px;
-        text-align: center;
-        box-shadow: 2px 2px 2px black;
-        color:rgb(0, 0, 0);
-        font-style: italic;
-    }
-    .mobile h2{
-        margin-top: 20px;
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        font-size: 22px;
-        color: rgb(0, 68, 255);
-    }
-}
-
-@media (min-width: 768px) and (max-width: 991px){
-    .mobile{
-        margin-top: 40px;
-        text-align: center;
-        box-shadow: 2px 2px 2px black;
-        color:rgb(255, 0, 140);
-    }
-    .mobile h2{
-        margin-top: 20px;
-        border: 2px solid green;
-        background-color: aquamarine;
-        color: rgb(107, 59, 38);
-    }
-}
-
-@media (min-width: 992px) and (max-width: 1200px){
-    .mobile{
-        margin-top: 40px;
-        text-align: center;
-        box-shadow: 2px 2px 2px black;
-        color:rgb(255, 0, 140);
-    }
-    .mobile h2{
-        margin-top: 20px;
-        font-style: italic;
-        background-color: rgb(168, 245, 80);
-        color: rgb(0, 174, 255);
-    }
-} 
-/*Ejercicio 4*/
-.contenedor {
-    width: 80%; /* Ancho del contenido para escritorio */
-    max-width: 900px; /* Ancho máximo para que no se estire demasiado */
-    margin: 0 auto; /* Centrar en la pantalla */
-    background-color: #5992d3;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 4px 4px 10px rgba(116, 2, 2, 0.1);
-    margin-top: 20%;
-}
-
-h1 {
-    color: #ff0000;
-    margin-bottom: 30px;
-    text-align: center;
-    font-style: italic;
-}
-
-.cajas-flex {
+  }
+  /*ejercicio 8 */
+  .contenedor{
+      
+      padding: 20px;
+      margin: 0 auto;
+      text-align: center;
+      background-color: rgba(55, 74, 51, 0.5);
+      text-align: center;
+      background-position: center;
+  }
+  .card {
     
-    display: flex; /* Las cajas se ponen en fila en escritorio */
-    justify-content: space-around; /* Espacio entre ellas */
-    gap: 20px; /* Separación entre cajas */
-    flex-wrap: wrap; /* Permite que las cajas se envuelvan si no caben */
-}
-.caja img {
-    max-width: 100%; /* La imagen nunca será más ancha que su contenedor */
-    height: auto;    /* Mantiene la proporción de aspecto de la imagen */
-    display: block;  /* Elimina el espacio extra debajo de las imágenes (comportamiento inline) */
-    margin-bottom: 15px; /* Espacio debajo de la imagen */
-    border-radius: 5px; /* Bordes ligeramente redondeados para la imagen */
-}
+    margin: 0 10px 0 10px  ;
+    margin-top: 10px;
+    display: inline-block;
+    width: 340px; 
+    height: 200px;
+    border: solid 1px; 
+    border-radius: 10px; 
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); 
+    box-sizing: border-box;
+    vertical-align: top;
+  }
 
-.caja {
-    flex: 1; /* Cada caja ocupa el mismo espacio disponible */
-    min-width: 250px; /* Asegura un tamaño mínimo para cada caja */
-    background-image: url(imagenes/OIP.jpeg); /* Color de fondo de la caja */
-    border: 3px solid #000000;
-    padding: 30px 20px;
-    border-radius: 5px;
+  #imagen1{
+    background-image: url(card/dirt-bike-1868996_1280.jpg);
+    width: 170px;
+    height: 150px;
+    background-repeat:no-repeat ;
+    background-size: cover;
+  }
+  #imagen2{
+    display: inline-block;
+    background-image: url(card/ducati-999-6835543_1280.jpg);
+    width: 170px;
+    height: 150px;
+    background-repeat:no-repeat ;
+    background-size: cover;
+    background-position: center;
+  }
+  #imagen3{
+    background-image: url(card/motorcycle-1084694_1280.jpg);
+    width: 170px;
+    height: 150px;
+    background-repeat:no-repeat ;
+    background-size: cover;
+  }
+  #imagen4{
+    background-image: url(card/wheel-3110175_1280.jpg);
+    width: 170px;
+    height: 150px;
+    background-repeat:no-repeat ;
+    background-size: cover;
+    background-position: center;
+  } 
+  /*Ejercicio 9*/
+  @media print{
+    header, nav{
+      display: none !important;
+    }
+  }
+  /*Ejercicio 10*/
+  .formulario {
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px; /* Ancho máximo para el formulario en móvil y tablet */
+    border: 1px solid #e0e0e0;
+    box-sizing: border-box;
     text-align: center;
-    font-size: 30px;
+  }
+
+  .formulario h2 {
+    color: #333333;
+    margin-bottom: 30px;
+    font-size: 1.8em;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+    display: inline-block;
+  }
+
+  /* --- Estilos de los Grupos de Campos (Base - Móvil: apilados) --- */
+  .datos {
+    margin-bottom: 20px; /* Espacio entre cada grupo de campo */
+    width: 100%; /* Ocupa todo el ancho disponible */
+    text-align: left;
+  }
+
+  .datos label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555555;
     font-weight: bold;
-    color: #b3002d;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
-}
+    font-size: 1rem;
+  }
 
+  .datos input[type="text"],
+  .datos input[type="email"],
+  .datos input[type="password"],
+  .datos input[type="tel"],
+  .datos select,
+  .datos textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 1em;
+    color: #333333;
+  }
 
-/* --- MEDIA QUERY para MÓVILES (Aplicar estos estilos solo en pantallas pequeñas) --- */
+  .datos input:focus,
+  .datos select:focus,
+  .datos textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+    outline: none;
+  }
 
-@media (max-width: 600px) {
-    .contenedor {
-        width: 95%; /* Más ancho en móviles */
-        padding: 15px;
+  .submit-button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    width: 100%; /* Botón ocupa todo el ancho */
+    display: block; /* Asegura que el botón ocupe su propia línea */
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .submit-button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+  }
+
+  /* --- Media Queries para Reorganización Visual --- */
+
+  /* Para pantallas de tablet y escritorio (ancho > 768px) */
+  @media (min-width: 768px) {
+    .formulario {
+      max-width: 800px; /* Aumenta el ancho máximo del formulario para escritorio */
+      padding: 50px;
     }
-
-    .cajas-flex {
-        
-        flex-direction: column; /* Las cajas se apilan una debajo de otra en móviles */
-        align-items: center; /* Centrar las cajas apiladas */
-    }
-
-    .caja {
-        width: 100%; /* Las cajas ocupan todo el ancho disponible */
-        margin-bottom: 15px; /* Espacio entre cajas apiladas */
-        min-width: unset; /* Quitar el min-width de escritorio */
-    }
-}
+  }
